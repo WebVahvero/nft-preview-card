@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --paragraph: #ababab;
+  --hover: hsl(178.35,100%,50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background-color: var(--main-bg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  gap: 100px;
+}
+
+section#card {
+  background-color: var(--card-bg);
+  padding: 25px;
+  width: 20%;
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+section#card figure.thumbnail {
+  cursor: pointer;
+  background-color: var(--hover);
+  border-radius: 15px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 255, 248, 0)), to(rgba(0, 255, 248, 0))), url(../images/image-equilibrium.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 255, 248, 0), rgba(0, 255, 248, 0)), url(../images/image-equilibrium.jpg);
+  width: 100%;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section#card figure.thumbnail img.view {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section#card figure.thumbnail:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 255, 248, 0.3)), to(rgba(0, 255, 248, 0.3))), url(../images/image-equilibrium.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 255, 248, 0.3), rgba(0, 255, 248, 0.3)), url(../images/image-equilibrium.jpg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section#card figure.thumbnail:hover img.view {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section#card article {
+  margin: 20px 0;
+}
+
+section#card article h1 {
+  color: var(--white);
+  margin-bottom: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+section#card article h1:hover {
+  color: var(--hover);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section#card article p {
+  color: var(--paragraph);
+}
+
+section#card article aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+section#card article aside div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+section#card article aside div p {
+  font-size: 16px;
+}
+
+section#card article aside div.value p {
+  font-weight: 600;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+section#card article aside div.value p:hover {
+  color: var(--hover);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section#card hr {
+  border: 1px solid var(--line);
+  margin: 0 2px;
+  border-radius: 20px;
+}
+
+section#card figure.creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  margin: 15px 0 10px 0;
+}
+
+section#card figure.creator img {
+  width: 40px;
+  padding: 1px;
+  background-color: var(--white);
+  border-radius: 100%;
+}
+
+section#card figure.creator figcaption {
+  color: var(--paragraph);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+section#card figure.creator figcaption a {
+  text-decoration: none;
+  color: var(--white);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section#card figure.creator figcaption a:hover {
+  color: var(--hover);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer {
+  background-color: var(--card-bg);
+  padding: 25px;
+  text-align: center;
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+footer small {
+  color: var(--paragraph);
+}
+
+footer small a {
+  text-decoration: none;
+  color: var(--white);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer small a:hover {
+  color: var(--hover);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 1600px) {
+  section#card {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  section#card {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  section#card {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  section#card {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  section#card {
+    width: 70%;
+    margin-top: 200px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  section#card {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
