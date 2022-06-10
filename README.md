@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [NFT]([https://your-live-site-url.com](https://webvahvero.github.io/nft-preview-card/)
+- Live Site URL: [NFT]([https://your-live-site-url.com])
 
 ## Author
 
